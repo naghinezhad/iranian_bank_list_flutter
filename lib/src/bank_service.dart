@@ -1,7 +1,5 @@
 import 'dart:convert';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:iranian_banks/color_utils.dart';
 
 import 'bank_model.dart';
 

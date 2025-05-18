@@ -6,7 +6,6 @@ import 'bank_model.dart';
 class IranianBankInfo {
   static final List<IranianBank> _banks = [];
 
-  /// لود کردن اطلاعات از فایل json داخل پکیج
   static Future<void> init() async {
     if (_banks.isNotEmpty) return;
 
@@ -17,7 +16,6 @@ class IranianBankInfo {
     final List<dynamic> jsonData = json.decode(data);
     _banks.clear();
     _banks.addAll(jsonData.map((e) {
-      // مسیر لوگو را به مسیر کامل داخل پکیج تبدیل می‌کنیم
       final logoPath =
           'packages/iranian_banks/${e['bank_logo'].replaceFirst('./', 'assets/')}';
 
@@ -28,14 +26,17 @@ class IranianBankInfo {
     }));
   }
 
-  /// پیدا کردن بانک بر اساس شماره کارت
+  static IranianBank? findByPrefixCardNumber(String cardNumber) {
+    for (var bank in _banks) {
+      final regex = RegExp(bank.prefix_card_regex);
+      if (regex.hasMatch(cardNumber)) {
+        return bank;
+      }
+    }
+    return null;
+  }
+
   static IranianBank? findByCardNumber(String cardNumber) {
-    // var reformCardNumber = cardNumber;
-    // if (reformCardNumber.length != 16) {
-    //   for (var i = reformCardNumber.length; i < 16; i++) {
-    //     reformCardNumber = reformCardNumber + '0';
-    //   }
-    // }
     for (var bank in _banks) {
       final regex = RegExp(bank.cardRegex);
       if (regex.hasMatch(cardNumber)) {
@@ -45,7 +46,16 @@ class IranianBankInfo {
     return null;
   }
 
-  /// پیدا کردن بانک بر اساس شماره شبا
+  static IranianBank? findByPrefixIBAN(String iban) {
+    for (var bank in _banks) {
+      final regex = RegExp(bank.prefix_iban_regex);
+      if (regex.hasMatch(iban)) {
+        return bank;
+      }
+    }
+    return null;
+  }
+
   static IranianBank? findByIBAN(String iban) {
     for (var bank in _banks) {
       final regex = RegExp(bank.ibanRegex);
@@ -56,6 +66,5 @@ class IranianBankInfo {
     return null;
   }
 
-  /// لیست کامل بانک‌ها
   static List<IranianBank> get allBanks => List.unmodifiable(_banks);
 }

@@ -2,19 +2,17 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class IranianBank {
-  IranianBank({
-    required this.bankName,
-    required this.bankTitle,
-    required this.bankLogoPath,
-    required this.iban,
-    required this.cardRegex,
-    required this.ibanRegex,
-    required this.prefix_card_regex,
-    required this.prefix_iban_regex,
-    required this.mainColor,
-    required this.lighterColor,
-    required this.darkerColor,
-  });
+  IranianBank(
+      {required this.bankName,
+      required this.bankTitle,
+      required this.bankLogoPath,
+      required this.iban,
+      required this.cardRegex,
+      required this.ibanRegex,
+      required this.mainColor,
+      required this.lighterColor,
+      required this.darkerColor,
+      required this.secondaryColor});
 
   factory IranianBank.fromJson(Map<String, dynamic> json) {
     return IranianBank(
@@ -24,11 +22,10 @@ class IranianBank {
       iban: json['iban'],
       cardRegex: json['card_regex'],
       ibanRegex: json['iban_regex'],
-      prefix_card_regex: json['prefix_card_regex'],
-      prefix_iban_regex: json['prefix_iban_regex'],
       mainColor: _hexToColor(json['color']),
       lighterColor: _hexToColor(json['lighter_color']),
       darkerColor: _hexToColor(json['darker_color']),
+      secondaryColor: _hexToColor(json['secondary_color']),
     );
   }
 
@@ -38,11 +35,10 @@ class IranianBank {
   final String cardRegex;
   final String iban;
   final String ibanRegex;
-  final String prefix_card_regex;
-  final String prefix_iban_regex;
   final Color mainColor;
   final Color lighterColor;
   final Color darkerColor;
+  final Color secondaryColor;
 
   /// logo builder from svg path
   SvgPicture logoBuilder({

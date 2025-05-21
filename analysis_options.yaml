@@ -1,4 +1,21 @@
 include: package:flutter_lints/flutter.yaml
 
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+linter:
+  rules:
+    # اجتناب از استفاده از print (برای لاگینگ بهتر)
+    avoid_print: true
+    
+    # تشویق به استفاده از constructorهای const
+    prefer_const_constructors: true
+    
+    # اطمینان از استفاده از const برای لیست‌ها و Map ها وقتی ممکنه
+    prefer_const_literals_to_create_immutables: true
+
+    # جلوگیری از متدهای غیر ضروری async در تابع‌های sync
+    unnecessary_async: true
+
+    # تشویق استفاده از final جایی که امکان داره
+    prefer_final_locals: true
+
+    # تشویق به استفاده از کلیدواژه override وقتی متدها override میشن
+    annotate_overrides: true

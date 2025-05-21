@@ -3,9 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class IranianBank {
   IranianBank(
-      {required this.bankName,
-      required this.bankTitle,
-      required this.bankLogoPath,
+      {required this.name,
+      required this.title,
+      required this.logoPath,
       required this.iban,
       required this.cardRegex,
       required this.ibanRegex,
@@ -16,9 +16,9 @@ class IranianBank {
 
   factory IranianBank.fromJson(Map<String, dynamic> json) {
     return IranianBank(
-      bankName: json['bank_name'],
-      bankTitle: json['bank_title'],
-      bankLogoPath: json['bank_logo'],
+      name: json['bank_name'],
+      title: json['bank_title'],
+      logoPath: json['bank_logo'],
       iban: json['iban'],
       cardRegex: json['card_regex'],
       ibanRegex: json['iban_regex'],
@@ -29,9 +29,9 @@ class IranianBank {
     );
   }
 
-  final String bankLogoPath;
-  final String bankName;
-  final String bankTitle;
+  final String logoPath;
+  final String name;
+  final String title;
   final String cardRegex;
   final String iban;
   final String ibanRegex;
@@ -47,7 +47,7 @@ class IranianBank {
     BoxFit fit = BoxFit.contain,
   }) {
     return SvgPicture.asset(
-      bankLogoPath.replaceFirst('./', 'assets/'),
+      logoPath.replaceFirst('./', 'assets/'),
       width: width,
       height: height,
       fit: fit,

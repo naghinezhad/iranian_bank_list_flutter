@@ -1,18 +1,17 @@
-# Iranian Banks Flutter
+# iranian_banks
 
-A Flutter package that provides an easy way to detect Iranian banks based on card numbers and IBANs (International Bank Account Numbers). This package includes a collection of Iranian bank data including their logos, names, colors, and regular expressions for validating card and IBAN numbers.
+A Flutter library to identify Iranian banks based on card numbers and IBANs.
 
-## Features
+## ✨ Features
 
-- Detects Iranian banks based on card numbers or IBANs.
-- Displays bank logo and name.
-- Supports IBAN and card number validation using regular expressions.
-- Simple and easy-to-use API for Flutter developers.
+- Detect bank by card number
+- Detect bank by IBAN
+- Includes bank name, title (in Persian), logo, color, and more
 
-## Installation
+## 📦 Installation
 
-To use this package in your Flutter project, add the following dependency in your `pubspec.yaml` file:
+Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  iranian_banks_flutter: ^0.0.1
+  iranian_banks: ^1.0.0

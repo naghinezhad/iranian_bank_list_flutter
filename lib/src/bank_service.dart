@@ -46,7 +46,7 @@ class IranianBanks {
     return null;
   }
 
-  static bool? verifyCardNumber(String cardNumber) {
+  static bool verifyCardNumber(String cardNumber) {
     cardNumber = cardNumber.replaceAll(RegExp(r'\s|-'), '');
 
     if (cardNumber.length != 16) return false;
@@ -66,14 +66,14 @@ class IranianBanks {
     return sum % 10 == 0;
   }
 
-  static bool? verifyIBAN(String iban) {
+  static bool verifyIBAN(String iban) {
     iban = iban.replaceAll(RegExp(r'\s+'), '').toUpperCase();
 
     if (!iban.startsWith('IR') || iban.length != 26) return false;
 
     String numericiban = iban.substring(4) + '1827'; // IR → 18 27
     for (int i = 4; i < iban.length; i++) {
-      String char = iban[i];
+      final String char = iban[i];
       if (RegExp(r'[0-9]').hasMatch(char)) {
         numericiban += char;
       } else if (RegExp(r'[A-Z]').hasMatch(char)) {
@@ -84,7 +84,7 @@ class IranianBanks {
     }
 
     // mod-97
-    BigInt number = BigInt.parse(numericiban);
+    final BigInt number = BigInt.parse(numericiban);
     return number % BigInt.from(97) == BigInt.one;
   }
 

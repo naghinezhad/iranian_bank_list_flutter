@@ -1,49 +1,23 @@
-import 'dart:convert';
-import 'package:flutter/services.dart';
-
-import 'bank_model.dart';
+import 'package:iranian_banks/src/model/bank_data_model.dart';
+import 'package:iranian_banks/src/model/bank_view_model.dart';
 
 class IranianBanks {
-  static final List<IranianBank> _banks = [];
+  static final List<IranianBanks> _banks = [];
 
-  static Future<void> init() async {
-    if (_banks.isNotEmpty) return;
-
-    final data = await rootBundle.loadString(
-      'packages/iranian_banks/assets/banks.json',
+  static BankInfoView? getBankFromCard(String cardNumber) {
+    final result = iranianBank.where(
+      (b) => RegExp(b.cardRegex).hasMatch(cardNumber),
     );
-
-    final List<dynamic> jsonData = json.decode(data);
-    _banks.clear();
-    _banks.addAll(jsonData.map((e) {
-      final logoPath =
-          'packages/iranian_banks/${e['bank_logo'].replaceFirst('./', 'assets/')}';
-
-      return IranianBank.fromJson({
-        ...e,
-        'bank_logo': logoPath,
-      });
-    }));
+    return result.isNotEmpty ? BankInfoView.from(result.first) : null;
   }
 
-  static IranianBank? getBankByCardNumber(String cardNumber) {
-    for (var bank in _banks) {
-      final regex = RegExp(bank.cardRegex);
-      if (regex.hasMatch(cardNumber)) {
-        return bank;
-      }
-    }
-    return null;
-  }
+  static BankInfoView? getBankFromIban(String iban) {
+    if (iban.length < 7) return null;
 
-  static IranianBank? getBankByIBAN(String iban) {
-    for (var bank in _banks) {
-      final regex = RegExp(bank.ibanRegex);
-      if (regex.hasMatch(iban)) {
-        return bank;
-      }
-    }
-    return null;
+    final result = iranianBank.where(
+      (b) => RegExp(b.ibanRegex).hasMatch(iban),
+    );
+    return result.isNotEmpty ? BankInfoView.from(result.first) : null;
   }
 
   static bool verifyCardNumber(String cardNumber) {
@@ -62,7 +36,6 @@ class IranianBanks {
       }
       sum += digit;
     }
-
     return sum % 10 == 0;
   }
 
@@ -71,7 +44,7 @@ class IranianBanks {
 
     if (!iban.startsWith('IR') || iban.length != 26) return false;
 
-    String numericiban = iban.substring(4) + '1827'; // IR → 18 27
+    String numericiban = '${iban.substring(4)}1827'; // IR → 18 27
     for (int i = 4; i < iban.length; i++) {
       final String char = iban[i];
       if (RegExp(r'[0-9]').hasMatch(char)) {
@@ -88,5 +61,5 @@ class IranianBanks {
     return number % BigInt.from(97) == BigInt.one;
   }
 
-  static List<IranianBank> get allBanks => List.unmodifiable(_banks);
+  static List<BankData> get allBanks => List.unmodifiable(_banks);
 }

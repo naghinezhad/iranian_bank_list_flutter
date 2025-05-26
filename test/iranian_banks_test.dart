@@ -8,7 +8,7 @@ void main() {
       final BankInfoView? bankInfo = IranianBanks.getBankFromCard(cardNumber);
 
       expect(bankInfo, isNotNull);
-      expect(bankInfo?.bankName, equals('blubank'));
+      expect(bankInfo?.name, equals('blubank'));
     });
 
     test('returns null for not find bank by cart number', () {

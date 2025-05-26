@@ -3,38 +3,34 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:iranian_banks/src/model/bank_data_model.dart';
 
 class BankInfoView {
-  final String bankName;
-  final String bankTitle;
-  final String bankLogo;
-  final String color;
-  final String lighterColor;
-  final String darkerColor;
-  final String secondaryColor;
+  final String name;
+  final String title;
+  final String logoPath;
+  final Color color;
+  final Color lighterColor;
+  final Color darkerColor;
+  final Color secondaryColor;
 
   const BankInfoView({
-    required this.bankName,
-    required this.bankTitle,
-    required this.bankLogo,
+    required this.name,
+    required this.title,
+    required this.logoPath,
     required this.color,
     required this.lighterColor,
     required this.darkerColor,
     required this.secondaryColor,
   });
 
-  Color get primaryColor => _hexToColor(color);
-  Color get secondary => _hexToColor(secondaryColor);
-  Color get lighter => _hexToColor(lighterColor);
-  Color get darker => _hexToColor(darkerColor);
-
   factory BankInfoView.from(BankData data) {
     return BankInfoView(
-      bankName: data.bankName,
-      bankTitle: data.bankTitle,
-      bankLogo: data.bankLogo,
-      color: data.color,
-      lighterColor: data.lighterColor,
-      darkerColor: data.darkerColor,
-      secondaryColor: data.secondaryColor,
+      name: data.bankName,
+      title: data.bankTitle,
+      logoPath:
+          data.bankLogo.replaceFirst('./', 'packages/iranian_banks/assets/'),
+      color: _hexToColor(data.color),
+      lighterColor: _hexToColor(data.lighterColor),
+      darkerColor: _hexToColor(data.darkerColor),
+      secondaryColor: _hexToColor(data.secondaryColor),
     );
   }
   SvgPicture logoBuilder({
@@ -43,7 +39,7 @@ class BankInfoView {
     BoxFit fit = BoxFit.contain,
   }) {
     return SvgPicture.asset(
-      bankLogo.replaceFirst('./', 'assets/'),
+      logoPath.replaceFirst('./', 'packages/iranian_banks/assets/'),
       width: width,
       height: height,
       fit: fit,

@@ -57,7 +57,7 @@ class BankInfoPage extends StatelessWidget {
           children: [
             BankLookupTab(
               lookupFunction: IranianBanks.getBankFromCard,
-              verificationFunction: IranianBanks.verifyCard,
+              verificationFunction: IranianBanks.verifyCardNumber,
               labelText: 'شماره کارت',
               hintText: 'شماره ۱۶ رقمی کارت را وارد کنید',
               maxLength: 16,

@@ -1,17 +1,42 @@
+/// Represents the raw data structure for a single Iranian bank.
+///
+/// This class holds all the necessary information parsed from the data source,
+/// which is then used to create a UI-friendly [BankInfoView] object.
 class BankData {
-  // نوع داده به String تغییر کرد تا به عنوان شناسه استفاده شود نه عدد
+  /// The 6 to 8-digit card number prefix (BIN).
   final String cardNo;
+
+  /// A unique machine-readable name for the bank (e.g., 'melli', 'saman').
   final String bankName;
+
+  /// The official human-readable title of the bank in Persian.
   final String bankTitle;
+
+  /// The relative path to the bank's SVG logo within the package.
   final String bankLogo;
+
+  /// The primary color of the bank in hex format (e.g., '#ffffff').
   final String color;
+
+  /// A lighter shade of the primary color, for UI gradients or highlights.
   final String lighterColor;
+
+  /// A darker shade of the primary color, for UI gradients or shadows.
   final String darkerColor;
+
+  /// The three-digit code identifying the bank in an IBAN.
   final String iban;
+
+  /// The regular expression used to match card numbers for this bank.
   final String cardRegex;
+
+  /// The regular expression used to match IBANs for this bank.
   final String ibanRegex;
+
+  /// A secondary color, often used for text, to ensure good contrast with the primary color.
   final String secondaryColor;
 
+  /// Creates a constant instance of [BankData].
   const BankData({
     required this.cardNo,
     required this.bankName,
@@ -34,6 +59,8 @@ class BankData {
 /// - Data types and codes have been corrected.
 /// - The list is sorted alphabetically by bankTitle.
 const List<BankData> iranianBank = [
+  // ... محتوای لیست بانک‌ها که قبلا اصلاح شد، اینجا قرار می‌گیرد ...
+  // (من همان نسخه نهایی با Regex ساده را اینجا قرار داده‌ام)
   BankData(
     cardNo: '636214',
     bankName: 'ayandeh',
@@ -64,11 +91,11 @@ const List<BankData> iranianBank = [
     cardNo: '627381',
     bankName: 'sepah-ansar',
     bankTitle: 'بانک انصار (ادغام شده در سپه)',
-    bankLogo: './images/sepah.svg', // Sepah Logo
-    color: '#0093dd', // Sepah Color
+    bankLogo: './images/sepah.svg',
+    color: '#0093dd',
     lighterColor: '#33a7f7',
     darkerColor: '#0077b3',
-    iban: '015', // Sepah IBAN
+    iban: '015',
     cardRegex: r'^627381\d*$',
     ibanRegex: r'^IR\d{2}015\d*$',
     secondaryColor: '#ffffff',
@@ -224,7 +251,7 @@ const List<BankData> iranianBank = [
     color: '#008a9f',
     lighterColor: '#33a7b0',
     darkerColor: '#006b7a',
-    iban: '066', // Corrected from 017
+    iban: '066',
     cardRegex: r'^502938\d*$',
     ibanRegex: r'^IR\d{2}066\d*$',
     secondaryColor: '#ffffff',
@@ -251,7 +278,7 @@ const List<BankData> iranianBank = [
     lighterColor: '#33b7f3',
     darkerColor: '#008bb5',
     iban: '056',
-    cardRegex: r'^621986(?!19)\d*$', // This regex correctly excludes BluBank
+    cardRegex: r'^621986(?!19)\d*$',
     ibanRegex: r'^IR\d{2}056\d*$',
     secondaryColor: '#ffffff',
   ),
@@ -350,11 +377,11 @@ const List<BankData> iranianBank = [
     cardNo: '639599',
     bankName: 'sepah-ghavvamin',
     bankTitle: 'بانک قوامین (ادغام شده در سپه)',
-    bankLogo: './images/sepah.svg', // Sepah Logo
-    color: '#0093dd', // Sepah Color
+    bankLogo: './images/sepah.svg',
+    color: '#0093dd',
     lighterColor: '#33a7f7',
     darkerColor: '#0077b3',
-    iban: '015', // Sepah IBAN
+    iban: '015',
     cardRegex: r'^639599\d*$',
     ibanRegex: r'^IR\d{2}015\d*$',
     secondaryColor: '#ffffff',
@@ -367,7 +394,7 @@ const List<BankData> iranianBank = [
     color: '#0092cf',
     lighterColor: '#33b1e3',
     darkerColor: '#006b99',
-    iban: '070', // Corrected from 060
+    iban: '070',
     cardRegex: r'^504172\d*$',
     ibanRegex: r'^IR\d{2}070\d*$',
     secondaryColor: '#ffffff',
@@ -467,11 +494,11 @@ const List<BankData> iranianBank = [
     cardNo: '639370',
     bankName: 'sepah-mehr-eghtesad',
     bankTitle: 'بانک مهر اقتصاد (ادغام شده در سپه)',
-    bankLogo: './images/sepah.svg', // Sepah Logo
-    color: '#0093dd', // Sepah Color
+    bankLogo: './images/sepah.svg',
+    color: '#0093dd',
     lighterColor: '#33a7f7',
     darkerColor: '#0077b3',
-    iban: '015', // Sepah IBAN
+    iban: '015',
     cardRegex: r'^639370\d*$',
     ibanRegex: r'^IR\d{2}015\d*$',
     secondaryColor: '#ffffff',
@@ -523,14 +550,14 @@ const List<BankData> iranianBank = [
     color: '#3094ea',
     lighterColor: '#66b5ff',
     darkerColor: '#1d74c2',
-    iban: '056', // Saman's IBAN code
+    iban: '056',
     cardRegex: r'^62198619\d*$',
     ibanRegex: r'^IR\d{2}056\d*$',
     secondaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '606256',
-    bankName: 'melal', // Corrected from 'meli'
+    bankName: 'melal',
     bankTitle: 'موسسه اعتباری ملل',
     bankLogo: './images/melal.svg',
     color: '#37389a',

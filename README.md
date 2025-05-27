@@ -23,7 +23,7 @@ Add this to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  iranian_banks: ^1.0.0 # Replace with the latest version
+  iranian_banks: ^1.1.0 # Replace with the latest version
 ```
 
 Then, run `flutter pub get` in your terminal.

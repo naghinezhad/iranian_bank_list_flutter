@@ -20,7 +20,7 @@ class IranianBanks {
     return result.isNotEmpty ? BankInfoView.from(result.first) : null;
   }
 
-  static bool verifyCardNumber(String cardNumber) {
+  static bool verifyCard(String cardNumber) {
     cardNumber = cardNumber.replaceAll(RegExp(r'\s|-'), '');
 
     if (cardNumber.length != 16) return false;
@@ -42,23 +42,28 @@ class IranianBanks {
   static bool verifyIBAN(String iban) {
     iban = iban.replaceAll(RegExp(r'\s+'), '').toUpperCase();
 
-    if (!iban.startsWith('IR') || iban.length != 26) return false;
+    if (!iban.startsWith('IR') || iban.length != 26) {
+      return false;
+    }
 
-    String numericiban = '${iban.substring(4)}1827'; // IR → 18 27
-    for (int i = 4; i < iban.length; i++) {
-      final String char = iban[i];
-      if (RegExp(r'[0-9]').hasMatch(char)) {
-        numericiban += char;
-      } else if (RegExp(r'[A-Z]').hasMatch(char)) {
-        numericiban += (char.codeUnitAt(0) - 55).toString();
+    final String rearrangedIban = iban.substring(4) + iban.substring(0, 4);
+
+    String numericIban = '';
+    for (int i = 0; i < rearrangedIban.length; i++) {
+      final charCode = rearrangedIban.codeUnitAt(i);
+      if (charCode >= 65 && charCode <= 90) {
+        numericIban += (charCode - 55).toString();
       } else {
-        return false;
+        numericIban += rearrangedIban[i];
       }
     }
 
-    // mod-97
-    final BigInt number = BigInt.parse(numericiban);
-    return number % BigInt.from(97) == BigInt.one;
+    try {
+      final BigInt ibanAsInt = BigInt.parse(numericIban);
+      return ibanAsInt % BigInt.from(97) == BigInt.one;
+    } catch (e) {
+      return false;
+    }
   }
 
   static List<BankData> get allBanks => List.unmodifiable(_banks);

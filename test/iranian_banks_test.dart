@@ -34,16 +34,14 @@ void main() {
 
     test('returns true for valid card number', () {
       final cardNumber = '6280231348159681';
-      final bool validationCardNumber =
-          IranianBanks.verifyCardNumber(cardNumber);
+      final bool validationCardNumber = IranianBanks.verifyCard(cardNumber);
 
       expect(validationCardNumber, isTrue);
     });
 
     test('returns false for invalid card number', () {
       final cardNumber = '1111000000000000';
-      final bool validationCardNumber =
-          IranianBanks.verifyCardNumber(cardNumber);
+      final bool validationCardNumber = IranianBanks.verifyCard(cardNumber);
 
       expect(validationCardNumber, isFalse);
     });

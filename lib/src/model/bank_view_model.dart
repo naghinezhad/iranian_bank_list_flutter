@@ -6,7 +6,7 @@ class BankInfoView {
   final String name;
   final String title;
   final String logoPath;
-  final Color color;
+  final Color primaryColor;
   final Color lighterColor;
   final Color darkerColor;
   final Color secondaryColor;
@@ -15,7 +15,7 @@ class BankInfoView {
     required this.name,
     required this.title,
     required this.logoPath,
-    required this.color,
+    required this.primaryColor,
     required this.lighterColor,
     required this.darkerColor,
     required this.secondaryColor,
@@ -27,7 +27,7 @@ class BankInfoView {
       title: data.bankTitle,
       logoPath:
           data.bankLogo.replaceFirst('./', 'packages/iranian_banks/assets/'),
-      color: _hexToColor(data.color),
+      primaryColor: _hexToColor(data.color),
       lighterColor: _hexToColor(data.lighterColor),
       darkerColor: _hexToColor(data.darkerColor),
       secondaryColor: _hexToColor(data.secondaryColor),

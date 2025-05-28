@@ -21,6 +21,7 @@ All notable changes to this package will be documented here.
   - Data for merged banks (Ansar, Ghavvamin, etc.) now correctly points to Bank Sepah, ensuring consistency while maintaining recognition of old card numbers.
   - The list is now sorted alphabetically for easier maintenance.
 - Refactored `BankInfoView` to eliminate redundant code in logo path generation, making it more efficient.
+- Renamed secondaryColor to onPrimaryColor for better clarity, as it defines the color for text drawn over the primary background color.
 
 ### Fixed
 

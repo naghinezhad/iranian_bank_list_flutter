@@ -23,7 +23,7 @@ Add this to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  iranian_banks: ^1.1.0 # Replace with the latest version
+  iranian_banks: ^1.2.0 # Replace with the latest version
 ```
 
 Then, run `flutter pub get` in your terminal.
@@ -148,7 +148,7 @@ This method checks if a 16-digit card number is valid according to the **Luhn al
 
 ```dart
 // A valid card number
-bool isValid = IranianBanks.verifyCard('6037-9975-9912-3456'); // true
+bool isValid = IranianBanks.verifyCardNumber('6037-9975-9912-3456'); // true
 ```
 
 ### Verify IBAN

@@ -118,13 +118,13 @@ if (bankInfo != null) {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Use the secondaryColor for text to ensure good contrast
+          // Use the onPrimary for text to ensure good contrast
           Text(
             bankInfo.name,
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
-              color: bankInfo.secondaryColor,
+              color: bankInfo.onPrimaryColor,
             ),
           ),
           const Spacer(),
@@ -174,7 +174,7 @@ The functions return a nullable `BankInfoView` object with the following propert
 | `primaryColor` | `Color`                     | The primary brand color of the bank.            |
 | `lighterColor` | `Color`                     | A lighter shade of the primary color.           |
 | `darkerColor`  | `Color`                     | A darker shade of the primary color.            |
-| `secondaryColor`| `Color`                    | A secondary or accent color for the bank.       |
+| `onPrimaryColor`| `Color`                    | A color that's clearly legible when drawn on primary.|
 | `logoBuilder()`| `SvgPicture Function()`     | A method that returns an `SvgPicture` widget.   |
 
 ## 🤝 Contributing

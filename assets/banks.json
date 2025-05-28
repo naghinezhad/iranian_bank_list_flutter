@@ -10,7 +10,7 @@
     "iban": "015",
     "card_regex": "^627381\\d*$",
     "iban_regex": "^IR\\d{2}015\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 636214,
@@ -23,7 +23,7 @@
     "iban": "062",
     "card_regex": "^636214\\d*$",
     "iban_regex": "^IR\\d{2}062\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 62198619,
@@ -36,7 +36,7 @@
     "iban": "056",
     "card_regex": "^62198619\\d*$",
     "iban_regex": "^IR\\d{2}056\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 502938,
@@ -49,7 +49,7 @@
     "iban": "017",
     "card_regex": "^502938\\d*$",
     "iban_regex": "^IR\\d{2}017\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 627412,
@@ -62,7 +62,7 @@
     "iban": "055",
     "card_regex": "^627412\\d*$",
     "iban_regex": "^IR\\d{2}055\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 505416,
@@ -75,7 +75,7 @@
     "iban": "064",
     "card_regex": "^505416\\d*$",
     "iban_regex": "^IR\\d{2}064\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 639599,
@@ -88,7 +88,7 @@
     "iban": "052",
     "card_regex": "^639599\\d*$",
     "iban_regex": "^IR\\d{2}052\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 627488,
@@ -101,7 +101,7 @@
     "iban": "053",
     "card_regex": "^627488\\d*$",
     "iban_regex": "^IR\\d{2}053\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 502910,
@@ -114,7 +114,7 @@
     "iban": "053",
     "card_regex": "^502910\\d*$",
     "iban_regex": "^IR\\d{2}053\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 603770,
@@ -127,7 +127,7 @@
     "iban": "016",
     "card_regex": "^603770\\d*$",
     "iban_regex": "^IR\\d{2}016\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 639217,
@@ -140,7 +140,7 @@
     "iban": "016",
     "card_regex": "^639217\\d*$",
     "iban_regex": "^IR\\d{2}016\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 628023,
@@ -153,7 +153,7 @@
     "iban": "014",
     "card_regex": "^628023\\d*$",
     "iban_regex": "^IR\\d{2}014\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 639370,
@@ -166,7 +166,7 @@
     "iban": "055",
     "card_regex": "^639370\\d*$",
     "iban_regex": "^IR\\d{2}055\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 606373,
@@ -179,7 +179,7 @@
     "iban": "060",
     "card_regex": "^606373\\d*$",
     "iban_regex": "^IR\\d{2}060\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 606256,
@@ -192,7 +192,7 @@
     "iban": "075",
     "card_regex": "^606256\\d*$",
     "iban_regex": "^IR\\d{2}075\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 603799,
@@ -205,7 +205,7 @@
     "iban": "017",
     "card_regex": "^603799\\d*$",
     "iban_regex": "^IR\\d{2}017\\d*$",
-    "secondary_color": "#000000"
+    "onPrimary_color": "#000000"
   },
   {
     "card_no": 610433,
@@ -218,7 +218,7 @@
     "iban": "012",
     "card_regex": "^610433\\d*$",
     "iban_regex": "^IR\\d{2}012\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 991975,
@@ -231,7 +231,7 @@
     "iban": "012",
     "card_regex": "^991975\\d*$",
     "iban_regex": "^IR\\d{2}012\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 622106,
@@ -244,7 +244,7 @@
     "iban": "054",
     "card_regex": "^622106\\d*$",
     "iban_regex": "^IR\\d{2}054\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 502229,
@@ -257,7 +257,7 @@
     "iban": "057",
     "card_regex": "^502229\\d*$",
     "iban_regex": "^IR\\d{2}057\\d*$",
-    "secondary_color": "#000000"
+    "onPrimary_color": "#000000"
   },
   {
     "card_no": 639347,
@@ -270,7 +270,7 @@
     "iban": "057",
     "card_regex": "^639347\\d*$",
     "iban_regex": "^IR\\d{2}057\\d*$",
-    "secondary_color": "#000000"
+    "onPrimary_color": "#000000"
   },
   {
     "card_no": 627760,
@@ -283,7 +283,7 @@
     "iban": "021",
     "card_regex": "^627760\\d*$",
     "iban_regex": "^IR\\d{2}021\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 589463,
@@ -296,7 +296,7 @@
     "iban": "013",
     "card_regex": "^589463\\d*$",
     "iban_regex": "^IR\\d{2}013\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 627961,
@@ -309,7 +309,7 @@
     "iban": "011",
     "card_regex": "^627961\\d*$",
     "iban_regex": "^IR\\d{2}011\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 603769,
@@ -322,7 +322,7 @@
     "iban": "019",
     "card_regex": "^603769\\d*$",
     "iban_regex": "^IR\\d{2}019\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 621986,
@@ -335,7 +335,7 @@
     "iban": "056",
     "card_regex": "^621986(?!19)\\d*$",
     "iban_regex": "^IR\\d{2}056\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 639607,
@@ -348,7 +348,7 @@
     "iban": "058",
     "card_regex": "^639607\\d*$",
     "iban_regex": "^IR\\d{2}058\\d*$",
-    "secondary_color": "#000000"
+    "onPrimary_color": "#000000"
   },
   {
     "card_no": 589210,
@@ -361,7 +361,7 @@
     "iban": "015",
     "card_regex": "^589210\\d*$",
     "iban_regex": "^IR\\d{2}015\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 504706,
@@ -374,7 +374,7 @@
     "iban": "061",
     "card_regex": "^504706\\d*$",
     "iban_regex": "^IR\\d{2}061\\d*$",
-    "secondary_color": "#000000"
+    "onPrimary_color": "#000000"
   },
   {
     "card_no": 502806,
@@ -387,7 +387,7 @@
     "iban": "061",
     "card_regex": "^502806\\d*$",
     "iban_regex": "^IR\\d{2}061\\d*$",
-    "secondary_color": "#000000"
+    "onPrimary_color": "#000000"
   },
   {
     "card_no": 639346,
@@ -400,7 +400,7 @@
     "iban": "059",
     "card_regex": "^639346\\d*$",
     "iban_regex": "^IR\\d{2}059\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 627353,
@@ -413,7 +413,7 @@
     "iban": "018",
     "card_regex": "^627353\\d*$",
     "iban_regex": "^IR\\d{2}018\\d*$",
-    "secondary_color": "#000000"
+    "onPrimary_color": "#000000"
   },
   {
     "card_no": 585983,
@@ -426,7 +426,7 @@
     "iban": "018",
     "card_regex": "^585983\\d*$",
     "iban_regex": "^IR\\d{2}018\\d*$",
-    "secondary_color": "#000000"
+    "onPrimary_color": "#000000"
   },
   {
     "card_no": 636949,
@@ -439,7 +439,7 @@
     "iban": "065",
     "card_regex": "^636949\\d*$",
     "iban_regex": "^IR\\d{2}065\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 627648,
@@ -452,7 +452,7 @@
     "iban": "020",
     "card_regex": "^627648\\d*$",
     "iban_regex": "^IR\\d{2}020\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 502908,
@@ -465,7 +465,7 @@
     "iban": "051",
     "card_regex": "^502908\\d*$",
     "iban_regex": "^IR\\d{2}051\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 505785,
@@ -478,7 +478,7 @@
     "iban": "069",
     "card_regex": "^505785\\d*$",
     "iban_regex": "^IR\\d{2}069\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 588947,
@@ -491,7 +491,7 @@
     "iban": "080",
     "card_regex": "^585947\\d*$",
     "iban_regex": "^IR\\d{2}080\\d*$",
-    "secondary_color": "#000000"
+    "onPrimary_color": "#000000"
   },
   {
     "card_no": 636214,
@@ -504,7 +504,7 @@
     "iban": "090",
     "card_regex": "^636214\\d*$",
     "iban_regex": "^IR\\d{2}090\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 504172,
@@ -517,7 +517,7 @@
     "iban": "060",
     "card_regex": "^504172\\d*$",
     "iban_regex": "^IR\\d{2}060\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   },
   {
     "card_no": 504706,
@@ -530,6 +530,6 @@
     "iban": "055",
     "card_regex": "^504706\\d*$",
     "iban_regex": "^IR\\d{2}055\\d*$",
-    "secondary_color": "#ffffff"
+    "onPrimary_color": "#ffffff"
   }
 ]

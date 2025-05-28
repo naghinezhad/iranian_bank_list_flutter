@@ -16,7 +16,7 @@ void main() {
       expect(bankInfo?.primaryColor.runtimeType, Color);
       expect(bankInfo?.lighterColor.runtimeType, Color);
       expect(bankInfo?.darkerColor.runtimeType, Color);
-      expect(bankInfo?.secondaryColor.runtimeType, Color);
+      expect(bankInfo?.onPrimaryColor.runtimeType, Color);
     });
 
     test('returns null for not find bank by cart number', () {
@@ -37,7 +37,7 @@ void main() {
       expect(bankInfo?.primaryColor.runtimeType, Color);
       expect(bankInfo?.lighterColor.runtimeType, Color);
       expect(bankInfo?.darkerColor.runtimeType, Color);
-      expect(bankInfo?.secondaryColor.runtimeType, Color);
+      expect(bankInfo?.onPrimaryColor.runtimeType, Color);
     });
 
     test('returns null for not find bank info by IBAN number', () {

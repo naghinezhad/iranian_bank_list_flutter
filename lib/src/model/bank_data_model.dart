@@ -33,8 +33,8 @@ class BankData {
   /// The regular expression used to match IBANs for this bank.
   final String ibanRegex;
 
-  /// A secondary color, often used for text, to ensure good contrast with the primary color.
-  final String secondaryColor;
+  /// A onPrimary color, often used for text, to ensure good contrast with the primary color.
+  final String onPrimaryColor;
 
   /// Creates a constant instance of [BankData].
   const BankData({
@@ -48,7 +48,7 @@ class BankData {
     required this.iban,
     required this.cardRegex,
     required this.ibanRegex,
-    required this.secondaryColor,
+    required this.onPrimaryColor,
   });
 }
 
@@ -72,7 +72,7 @@ const List<BankData> iranianBank = [
     iban: '062',
     cardRegex: r'^636214\d*$',
     ibanRegex: r'^IR\d{2}062\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '627412',
@@ -85,7 +85,7 @@ const List<BankData> iranianBank = [
     iban: '055',
     cardRegex: r'^627412\d*$',
     ibanRegex: r'^IR\d{2}055\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '627381',
@@ -98,7 +98,7 @@ const List<BankData> iranianBank = [
     iban: '015',
     cardRegex: r'^627381\d*$',
     ibanRegex: r'^IR\d{2}015\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '505785',
@@ -111,7 +111,7 @@ const List<BankData> iranianBank = [
     iban: '069',
     cardRegex: r'^505785\d*$',
     ibanRegex: r'^IR\d{2}069\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '622106',
@@ -124,7 +124,7 @@ const List<BankData> iranianBank = [
     iban: '054',
     cardRegex: r'^622106\d*$',
     ibanRegex: r'^IR\d{2}054\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '502229',
@@ -137,7 +137,7 @@ const List<BankData> iranianBank = [
     iban: '057',
     cardRegex: r'^502229\d*$',
     ibanRegex: r'^IR\d{2}057\d*$',
-    secondaryColor: '#000000',
+    onPrimaryColor: '#000000',
   ),
   BankData(
     cardNo: '639347',
@@ -150,7 +150,7 @@ const List<BankData> iranianBank = [
     iban: '057',
     cardRegex: r'^639347\d*$',
     ibanRegex: r'^IR\d{2}057\d*$',
-    secondaryColor: '#000000',
+    onPrimaryColor: '#000000',
   ),
   BankData(
     cardNo: '627760',
@@ -163,7 +163,7 @@ const List<BankData> iranianBank = [
     iban: '021',
     cardRegex: r'^627760\d*$',
     ibanRegex: r'^IR\d{2}021\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '627353',
@@ -176,7 +176,7 @@ const List<BankData> iranianBank = [
     iban: '018',
     cardRegex: r'^627353\d*$',
     ibanRegex: r'^IR\d{2}018\d*$',
-    secondaryColor: '#000000',
+    onPrimaryColor: '#000000',
   ),
   BankData(
     cardNo: '585983',
@@ -189,7 +189,7 @@ const List<BankData> iranianBank = [
     iban: '018',
     cardRegex: r'^585983\d*$',
     ibanRegex: r'^IR\d{2}018\d*$',
-    secondaryColor: '#000000',
+    onPrimaryColor: '#000000',
   ),
   BankData(
     cardNo: '502908',
@@ -202,7 +202,7 @@ const List<BankData> iranianBank = [
     iban: '051',
     cardRegex: r'^502908\d*$',
     ibanRegex: r'^IR\d{2}051\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '627648',
@@ -215,7 +215,7 @@ const List<BankData> iranianBank = [
     iban: '020',
     cardRegex: r'^627648\d*$',
     ibanRegex: r'^IR\d{2}020\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '636949',
@@ -228,7 +228,7 @@ const List<BankData> iranianBank = [
     iban: '015', // Sepah IBAN
     cardRegex: r'^636949\d*$',
     ibanRegex: r'^IR\d{2}015\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '585947',
@@ -241,7 +241,7 @@ const List<BankData> iranianBank = [
     iban: '080',
     cardRegex: r'^585947\d*$',
     ibanRegex: r'^IR\d{2}080\d*$',
-    secondaryColor: '#000000',
+    onPrimaryColor: '#000000',
   ),
   BankData(
     cardNo: '502938',
@@ -254,7 +254,7 @@ const List<BankData> iranianBank = [
     iban: '066',
     cardRegex: r'^502938\d*$',
     ibanRegex: r'^IR\d{2}066\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '589463',
@@ -267,7 +267,7 @@ const List<BankData> iranianBank = [
     iban: '013',
     cardRegex: r'^589463\d*$',
     ibanRegex: r'^IR\d{2}013\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '621986',
@@ -280,7 +280,7 @@ const List<BankData> iranianBank = [
     iban: '056',
     cardRegex: r'^621986(?!19)\d*$',
     ibanRegex: r'^IR\d{2}056\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '639607',
@@ -293,7 +293,7 @@ const List<BankData> iranianBank = [
     iban: '058',
     cardRegex: r'^639607\d*$',
     ibanRegex: r'^IR\d{2}058\d*$',
-    secondaryColor: '#000000',
+    onPrimaryColor: '#000000',
   ),
   BankData(
     cardNo: '589210',
@@ -306,7 +306,7 @@ const List<BankData> iranianBank = [
     iban: '015',
     cardRegex: r'^589210\d*$',
     ibanRegex: r'^IR\d{2}015\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '639346',
@@ -319,7 +319,7 @@ const List<BankData> iranianBank = [
     iban: '059',
     cardRegex: r'^639346\d*$',
     ibanRegex: r'^IR\d{2}059\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '504706',
@@ -332,7 +332,7 @@ const List<BankData> iranianBank = [
     iban: '061',
     cardRegex: r'^504706\d*$',
     ibanRegex: r'^IR\d{2}061\d*$',
-    secondaryColor: '#000000',
+    onPrimaryColor: '#000000',
   ),
   BankData(
     cardNo: '502806',
@@ -345,7 +345,7 @@ const List<BankData> iranianBank = [
     iban: '061',
     cardRegex: r'^502806\d*$',
     ibanRegex: r'^IR\d{2}061\d*$',
-    secondaryColor: '#000000',
+    onPrimaryColor: '#000000',
   ),
   BankData(
     cardNo: '603769',
@@ -358,7 +358,7 @@ const List<BankData> iranianBank = [
     iban: '019',
     cardRegex: r'^603769\d*$',
     ibanRegex: r'^IR\d{2}019\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '627961',
@@ -371,7 +371,7 @@ const List<BankData> iranianBank = [
     iban: '011',
     cardRegex: r'^627961\d*$',
     ibanRegex: r'^IR\d{2}011\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '639599',
@@ -384,7 +384,7 @@ const List<BankData> iranianBank = [
     iban: '015',
     cardRegex: r'^639599\d*$',
     ibanRegex: r'^IR\d{2}015\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '504172',
@@ -397,7 +397,7 @@ const List<BankData> iranianBank = [
     iban: '070',
     cardRegex: r'^504172\d*$',
     ibanRegex: r'^IR\d{2}070\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '606373',
@@ -410,7 +410,7 @@ const List<BankData> iranianBank = [
     iban: '060',
     cardRegex: r'^606373\d*$',
     ibanRegex: r'^IR\d{2}060\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '627488',
@@ -423,7 +423,7 @@ const List<BankData> iranianBank = [
     iban: '053',
     cardRegex: r'^627488\d*$',
     ibanRegex: r'^IR\d{2}053\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '502910',
@@ -436,7 +436,7 @@ const List<BankData> iranianBank = [
     iban: '053',
     cardRegex: r'^502910\d*$',
     ibanRegex: r'^IR\d{2}053\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '603770',
@@ -449,7 +449,7 @@ const List<BankData> iranianBank = [
     iban: '016',
     cardRegex: r'^603770\d*$',
     ibanRegex: r'^IR\d{2}016\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '639217',
@@ -462,7 +462,7 @@ const List<BankData> iranianBank = [
     iban: '016',
     cardRegex: r'^639217\d*$',
     ibanRegex: r'^IR\d{2}016\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '505416',
@@ -475,7 +475,7 @@ const List<BankData> iranianBank = [
     iban: '064',
     cardRegex: r'^505416\d*$',
     ibanRegex: r'^IR\d{2}064\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '628023',
@@ -488,7 +488,7 @@ const List<BankData> iranianBank = [
     iban: '014',
     cardRegex: r'^628023\d*$',
     ibanRegex: r'^IR\d{2}014\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '639370',
@@ -501,7 +501,7 @@ const List<BankData> iranianBank = [
     iban: '015',
     cardRegex: r'^639370\d*$',
     ibanRegex: r'^IR\d{2}015\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '610433',
@@ -514,7 +514,7 @@ const List<BankData> iranianBank = [
     iban: '012',
     cardRegex: r'^610433\d*$',
     ibanRegex: r'^IR\d{2}012\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '991975',
@@ -527,7 +527,7 @@ const List<BankData> iranianBank = [
     iban: '012',
     cardRegex: r'^991975\d*$',
     ibanRegex: r'^IR\d{2}012\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '603799',
@@ -540,7 +540,7 @@ const List<BankData> iranianBank = [
     iban: '017',
     cardRegex: r'^603799\d*$',
     ibanRegex: r'^IR\d{2}017\d*$',
-    secondaryColor: '#000000',
+    onPrimaryColor: '#000000',
   ),
   BankData(
     cardNo: '62198619',
@@ -553,7 +553,7 @@ const List<BankData> iranianBank = [
     iban: '056',
     cardRegex: r'^62198619\d*$',
     ibanRegex: r'^IR\d{2}056\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
   BankData(
     cardNo: '606256',
@@ -566,6 +566,6 @@ const List<BankData> iranianBank = [
     iban: '075',
     cardRegex: r'^606256\d*$',
     ibanRegex: r'^IR\d{2}075\d*$',
-    secondaryColor: '#ffffff',
+    onPrimaryColor: '#ffffff',
   ),
 ];

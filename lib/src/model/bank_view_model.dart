@@ -25,8 +25,8 @@ class BankInfoView {
   /// A darker shade of the primary color.
   final Color darkerColor;
 
-  /// A secondary color for UI elements, typically for text.
-  final Color secondaryColor;
+  /// A color that's clearly legible when drawn on primary.
+  final Color onPrimaryColor;
 
   /// Creates an instance of [BankInfoView].
   const BankInfoView({
@@ -36,7 +36,7 @@ class BankInfoView {
     required this.primaryColor,
     required this.lighterColor,
     required this.darkerColor,
-    required this.secondaryColor,
+    required this.onPrimaryColor,
   });
 
   /// A factory constructor to create a [BankInfoView] from a raw [BankData] object.
@@ -52,7 +52,7 @@ class BankInfoView {
       primaryColor: _hexToColor(data.color),
       lighterColor: _hexToColor(data.lighterColor),
       darkerColor: _hexToColor(data.darkerColor),
-      secondaryColor: _hexToColor(data.secondaryColor),
+      onPrimaryColor: _hexToColor(data.onPrimaryColor),
     );
   }
 

@@ -6,7 +6,7 @@ void main() {
   group('BankService', () {
     test('returns correct bank info by card number', () {
       const cardNumber =
-          '6037-9975-9912-3456'; // test card number is for blu bank
+          '6219-8619-6864-4756'; // test card number is for blu bank
       final BankInfoView? bankInfo = IranianBanks.getBankFromCard(cardNumber);
 
       expect(bankInfo, isNotNull);

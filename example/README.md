@@ -1,16 +1,22 @@
-# iranian_banks_example
+# iranian_banks Example
 
-A new Flutter project.
+This example provides a working demonstration of the `iranian_banks` package.
 
-## Getting Started
+It showcases how to use the utility functions to validate Iranian bank card numbers and retrieve corresponding bank information, such as the bank's name and logo.
 
-This project is a starting point for a Flutter application.
+## Demonstration
 
-A few resources to get you started if this is your first Flutter project:
+Below is an animated GIF showcasing the result of the code in this example, where a card number is entered, validated, and the bank's information is displayed.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![A demonstration of validating a card number or IBAN and displaying the bank logo.](../media/example.gif)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to Run
+
+To run this example:
+
+1. Clone the repository.
+2. Navigate to the `example` directory: `cd example`
+3. Install dependencies: `flutter pub get`
+4. Run the app: `flutter run`
+
+For the complete implementation, please see the `lib/main.dart` file within this `example` directory.
